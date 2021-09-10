@@ -1,6 +1,6 @@
 {
   "name": "webneex/consulta-cfdisat",
-  "version": "1.0",
+  "version": "v1.0.0",
   "description": "Librer\u0000a para consulta de estatus de comprobantes",
   "type": "library",
   "authors": [
@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "php": ">=5.6"
   },
   "autoload": {
     "classmap": [
