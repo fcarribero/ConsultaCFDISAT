@@ -1,0 +1,18 @@
+{
+  "name": "webneex/consulta-cfdisat",
+  "version": "1.0",
+  "description": "Librer\u0000a para consulta de estatus de comprobantes",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Francisco Carribero",
+      "email": "francisco.carriberoQ@webneex.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
