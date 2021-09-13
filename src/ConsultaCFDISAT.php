@@ -20,7 +20,7 @@ class ConsultaCFDISAT {
      * @return Resultado|null
      * @throws Exception
      */
-    protected static function ConsultaCfdi($url, $uuid, $rfc_emisor, $rfc_receptor, $total, &$debug = null) {
+    protected static function call($url, $uuid, $rfc_emisor, $rfc_receptor, $total, &$debug = null) {
 
         $rfc_emisor_encoded = htmlspecialchars($rfc_emisor, ENT_QUOTES);
         $rfc_receptor_encoded = htmlspecialchars($rfc_receptor, ENT_QUOTES);
@@ -83,8 +83,8 @@ class ConsultaCFDISAT {
      * @return Resultado|null
      * @throws Exception
      */
-    public static function ConsultaCfdiProduccion($uuid, $rfc_emisor, $rfc_receptor, $total, &$debug = null) {
-        return static::ConsultaCfdi(static::URL_PRODUCCION, $uuid, $rfc_emisor, $rfc_receptor, $total, $debug);
+    public static function ConsultaCfdi($uuid, $rfc_emisor, $rfc_receptor, $total, &$debug = null) {
+        return static::call(static::URL_PRODUCCION, $uuid, $rfc_emisor, $rfc_receptor, $total, $debug);
     }
 
     /**
@@ -97,6 +97,6 @@ class ConsultaCFDISAT {
      * @throws Exception
      */
     public static function ConsultaCfdiPruebas($uuid, $rfc_emisor, $rfc_receptor, $total, &$debug = null) {
-        return static::ConsultaCfdi(static::URL_PRUEBAS, $uuid, $rfc_emisor, $rfc_receptor, $total, $debug);
+        return static::call(static::URL_PRUEBAS, $uuid, $rfc_emisor, $rfc_receptor, $total, $debug);
     }
 }
