@@ -14,6 +14,6 @@ $ composer require webneex/consulta-cfdi-sat
 ## Usage
 
 ```php
-\Webneex\Consultacfdi-sat\Consultacfdi-sat::ConsultaCfdiPruebas('AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA', 'AAA010101AAA', 'XAXX010101000', 1.23);
+\Webneex\ConsultacfdiSat\ConsultacfdiSat::ConsultaCfdiPruebas('AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA', 'AAA010101AAA', 'XAXX010101000', 1.23);
 ```
 
